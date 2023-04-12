@@ -16,7 +16,7 @@ project(hello-pybind11 VERSION "0.1")
 find_package(pybind11 REQUIRED)
 set(python_module_name _hello)
 pybind11_add_module(${python_module_name} MODULE
-  src/cpp/hello_py.cpp
+  src/hello/cpp/hello_py.cpp
   )
 
 install(TARGETS ${python_module_name} DESTINATION .)
